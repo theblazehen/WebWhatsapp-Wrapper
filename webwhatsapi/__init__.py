@@ -533,6 +533,13 @@ class WhatsAPIDriver(object):
         if not isinstance(result, bool):
             return factory_message(result, self)
         return result
+    
+    def chat_send_message2(self, chat_id, message):
+        result = self.wapi_functions.sendMessage2(chat_id, message)
+
+        if not isinstance(result, bool):
+            return factory_message(result, self)
+        return result
 
     def chat_reply_message(self, message_id, message):
         result = self.wapi_functions.ReplyMessage(message_id, message)
