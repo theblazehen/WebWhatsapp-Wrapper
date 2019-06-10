@@ -16,7 +16,7 @@ class Contact(WhatsappObjectWithId):
         :param driver:
         :type driver: WhatsAPIDriver
         """
-		
+
         self.short_name = None
         self.push_name = None
         self.formatted_name = None
